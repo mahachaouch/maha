@@ -34,7 +34,7 @@ $bdd = new Database("127.9.150.130", "maha", "adminWzZH6pH", "u_bKWtXEbEAS");
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
         <li><a href="contact.php">contact</a></li>
-        <li><a href="signin.php">Sign up</a></li>
+        <li><a href="signup.php">Sign up</a></li>
       
         <li><a href="#">about</a></li>
 
