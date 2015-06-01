@@ -123,15 +123,13 @@ if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email']))
 	if(empty($erreurs)) {
 
 		$id=$bdd->addAdherent($nom, $prenom, $email, $tel, $pwd);             /*toutes les infos sont valides , on peut donc l ajouter a notre base 
-		   /on recupere son id suite a l ajout*/  ?>
+		                                                                                  on recupere son id suite a l ajout*/ 
+		    ?>
 		 <p>Appuyez ici pour voir le récapitulatif de votre inscription: <a href="moncompte.php">Recap</a></p>                                                                                   
       <?php
     setcookie("id","$id"+1, time() + (3600*24*365),"/" );
-    echo "$_COOKIE[id]";
 	 
 	
-	
-
 if (!empty($_POST['cours']))  {             /*si il coche une case cours*/
 	$i=0;
 	while($i < count($_POST['cours'])) {
