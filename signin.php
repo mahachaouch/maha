@@ -74,7 +74,6 @@ while($instrument = $instruments->fetch()) {
 
     
 <?php
-/*print_r($_POST);*/
 if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email'])) && (isset($_POST['tel'])) && (isset($_POST['pwd'])) && ((isset($_POST['cours']))|| isset($_POST['instrument'])) )
 {
 	$erreurs = Array();
@@ -116,7 +115,7 @@ if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email']))
 	$pwd = sha1($pwd);
      if (isset($_POST['cours'])) {
 	$cours = $_POST['cours'];
-};
+}
   
 
 
