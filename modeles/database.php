@@ -4,7 +4,7 @@ class Database {
 
 	public function __construct($hote, $bdname, $nom_user, $password) {
 		try {
-		    $this->bdd = new PDO('mysql:host='.$hote.';dbname='.$bdname.'', $nom_user, '');
+		    $this->bdd = new PDO('mysql:host='.$hote.';dbname='.$bdname.'', $nom_user, 'u_bKWtXEbEAS');
 		    $this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 		    $this->bdd->query("SET NAMES 'utf8'");
 		} catch (PDOException $e) {

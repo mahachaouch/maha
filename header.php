@@ -1,12 +1,12 @@
 
   <?php
-$dsn = 'mysql:host=localhost;dbname=maha';
-$user = 'root';
-$password = '';
+$dsn = 'mysql:host= 127.9.150.130:3306;dbname=maha';
+$user = 'adminWzZH6pH';
+$password = 'u_bKWtXEbEAS';
 
 require_once("modeles/database.php");
 
-$bdd = new Database("localhost", " maha", "root", "");
+$bdd = new Database("127.9.150.130", "maha", "adminWzZH6pH", "u_bKWtXEbEAS");
 
 ?>
 
