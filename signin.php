@@ -73,10 +73,8 @@ while($instrument = $instruments->fetch()) {
 </div>
 
     
-
-
 <?php
-print_r($_POST);
+/*print_r($_POST);*/
 if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email'])) && (isset($_POST['tel'])) && (isset($_POST['pwd'])) && ((isset($_POST['cours']))|| isset($_POST['instrument'])) )
 {
 	$erreurs = Array();
@@ -124,7 +122,6 @@ if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email']))
 
 	if(empty($erreurs)) {
 
-		//echo 'Bienvenue dans notre conservatoire, vous etes désormais membre ';
 		$id=$bdd->addAdherent($nom, $prenom, $email, $tel, $pwd);             /*toutes les infos sont valides , on peut donc l ajouter a notre base 
 		   /on recupere son id suite a l ajout*/  ?>
 		 <p>Appuyez ici pour voir le récapitulatif de votre inscription: <a href="moncompte.php">Recap</a></p>                                                                                   
@@ -166,26 +163,10 @@ if (!empty($_POST['instrument'])) {          /*si il coche une case instrument*/
 	$bdd->updateTarifAdherent($id,$total);	
 
 
-
-	/* $recapit = $bdd->recap($id) ;
-	 $i=0;
-while ($i < count($recapit)) { ?>
-                        <table>
-                            <tr>
-                                <td><?php echo $recapit[$i]['nom_cours'];?></td>
-                                <td><?php echo $recapit[$i]['tarifMensuel'];?> </td>
-                                </tr>
-                         </table>
-                <?php
-                $i++;
-  }*/
-
-
-
     }   
 	else {
 		echo '<ul>';
-		foreach($erreurs as $err) { // $err in $erreurs
+		foreach($erreurs as $err) {  
 			echo '<li>'.$err.'</li>';
 
 		}
@@ -198,7 +179,6 @@ while ($i < count($recapit)) { ?>
 
     
 ?>
-
 
 
 <!-- pour retourner au top de la page -->
