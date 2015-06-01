@@ -16,13 +16,13 @@ p    {color:black}
   </div>
   <div class="row">
     <div class="col-md-3">
-      <p> <img src="img/image1.jpg" width="400" height="300"/>blabla </p>
+      <p> <img src="img/image1.jpg" width="400" height="300"/></p>
     </div>
     <div class="col-md-3"> 
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p></p>
     </div>
     <div class="col-md-3"> 
-      <p><img src="img/image2.jpg" width="400" height="300"/>Sed ut perspiciatis accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p><img src="img/image2.jpg" width="400" height="300"/></p>
     </div>
     
     <div class="clearfix visible-lg"></div>
