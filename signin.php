@@ -126,15 +126,12 @@ if(isset($_POST['nom']) && (isset($_POST['prenom'])) && (isset($_POST['email']))
 		   /on recupere son id suite a l ajout*/  ?>
 		 <p>Appuyez ici pour voir le récapitulatif de votre inscription: <a href="moncompte.php">Recap</a></p>                                                                                   
       <?php
-	echo "$id \n";
     setcookie("id","$id"+1, time() + (3600*24*365),"/" );
     echo "$_COOKIE[id]";
 	 
 	
 	
- 
 
-//*********************************************************************
 if (!empty($_POST['cours']))  {             /*si il coche une case cours*/
 	$i=0;
 	while($i < count($_POST['cours'])) {
@@ -155,11 +152,8 @@ if (!empty($_POST['instrument'])) {          /*si il coche une case instrument*/
           
 
 	$tarif1=$bdd->calculTarifcours($id);
-	echo "$tarif1 \n" ;
 	$tarif2=$bdd->calculTarifInstru($id);
-	echo"$tarif2 \n";
 	$total= $tarif1 + $tarif2 ;
-	echo "$total \n";
 	$bdd->updateTarifAdherent($id,$total);	
 
 
