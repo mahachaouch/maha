@@ -10,7 +10,7 @@ h1   {color:red}
 p    {color:black}
 </style>
   <div class="jumbotron">
-    <h1> Bienvenue dans notre site !</h1>      
+    <h1> Bienvenue sur notre site !</h1>      
     <p>Vous aimez la musique et vous voulez l'apprendre et la jouer ? Mozart conservatoire est la solution !! </p>      
     
   </div>
